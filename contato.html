@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel = "stylesheet" href="estilo.css">
+</head>
+<body>
+    <a href="index.html"><button>Voltar ao Menu</button></a>         <!--Botão voltar como estipulado na explicação do trabalho pra não usar o "voltar"-->
+<div class="introducao">                      <!--Aqui todos as infos de contato sobre mim numa div juntas pra novamente, organizar melhor as fontes,tamanhos-->
+    <h1>CONTATO</h1>
+    <h2>Telefone</h2> 
+    <p>11 943499256</p> 
+    <h2>Email</h2>
+    <p>renancorreia347@gmail.com</p>
+</div>
+<hr>
+<div class="introducao">          <!--aqui usei de novo a div "introducao, pra colocar as fontes iguais a de cima"-->
+<div class="infos">                  <!--Criei uma nova div para as tabelas, inputs-->
+    <form action="">
+        <tr>
+            <th><label for="Nome">Nome:</label></th>                 <!--adicionei tabela de input pra colocar o nome,sobrenome,email-->
+            <td><input type="text" name:"Nome" id="Nome"></td>
+        </tr>
+        <tr>
+            <th><label for="Sobrenome">Sobrenome:</label></th>
+            <td><input type="text" name:"Sobrenome" id="Sobrenome"></td>
+        </tr>
+        <tr>
+            <th><label for="Email">Email:</label></th>
+            <td><input type="Email" name="Email" id="Email"></td>
+        </tr>
+        <tr>
+            <th><label for="Assunto">Assunto:</label></th> <!--aqui adicionei uma tabela so que com opções e logo apos isso coloquei um input de texto pra você escrever o que entender-->
+            <td><select>
+                <option value="Proposta de trabalho">Proposta de trabalho</option>
+                <option value="Conversa sobre ideias">Conversa sobre ideias</option>
+                <option value="Opinião sobre X Assunto">Opinião sobre X Assunto</option>
+                <option value="Outros">Outros</option>
+            </select> </td>
+        </tr>
+    </form>
+    <hr>
+    <textarea>DIGITE SUA MENSAGEM AQUI!</textarea>
+    <button type="submit"><a href="mailto:renancorreia347@gmail.com"> Enviar email</a> </button> 
+</div>     
+</div>        
+</form>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {                      /* aqui pra colocar o fundo azul claro de todas as paginas pro site ficar no mesmo ambiente*/
+    background:rgb(159, 176, 182);      
+}
+
+
+h1 {color:rgb(0, 0, 0);         /* mudando todos os titulos para a mesma cor pra não ficar colocando um por uma*/
+    font-size:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    text-align: center; }
+
+
+.infoindex {               
+    display: flex; /*criado pra deixar flexivel e responsivo*/
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /*alinhando os elementos no meio e em baixo alinhando o texto*/
+    text-align: center;
+}
+
+.infoindex img {     /*aqui puxei a classe infoindex porém so a img, pra configurar a imagem do jeito que eu queria sem mecher nos outros elementos*/
+    width: 25%;
+    height: 25%;
+    clip-path: ellipse(50% 50% at 50% 50%); /*queria fazer a imagem como se fosse um retrato meio oval*/
+}
+
+.abaixo {         /*Aqui puxei so o paragrafo "abaixo" e configurei ele colocando fonte,tamanho, etc*/
+    text-align: center;   
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px; /* Adiciona um espaço superior */
+}
+
+.paragrafoinfo {    
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontelinks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    justify-content: center; /*Centraliza o conteiner no meio*/
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+    margin-top: 20px; /* Adiciona um espaço superior para separar do conteúdo acima */
+}
+
+.fontelinks a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}
+
+.fontelinks a {
+    margin: 0 70px; /*Coloca espaço sobre os links para que fique melhor visualmente*/
+
+}
+#imagemtelefone {
+    width: 3%;
+    height: 3%;
+
+}
+.contato {
+    text-align: center;
+    
+}
+.contato img { /*Aqui modifica todos os elementos do contato para que fiquem na mesma largura e altura*/
+    width: 3%;
+    height: 3%;
+    }
+
+    
+.introducao {   /*configura texto, formatação, etc*/
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+}
+
+.contato a {   /*Aqui basicamente tira sublinhados que ficavam do lado dos links*/
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    border: none; /* Remove a borda padrão dos links */
+}
+
+h2 {
+    color:rgb(0, 0, 255)
+}
+
+.conteudoinfo {
+    margin-right: 10px; /* Adiciona uma margem à direita da imagem para separar do texto */
+    object-fit: cover;
+}
+
+.infos {   /*define o número e a largura das colunas*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+.infos form,
+.infos textarea { /*Aqui define o modo de como ela vai ser, igual ao "button"*/
+    grid-column: span 2;
+}
+
+.infos button {
+    grid-column: span 2;
+}
+
